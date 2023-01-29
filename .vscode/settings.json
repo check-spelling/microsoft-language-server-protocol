@@ -34,5 +34,6 @@
 	],
 	"git.branchProtection": [
 		"gh-pages"
-	]
+	],
+	"sarif-viewer.connectToGithubCodeScanning": "on"
 }
