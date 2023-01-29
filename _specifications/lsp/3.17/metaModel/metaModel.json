@@ -7024,7 +7024,7 @@
 			"since": "3.17.0"
 		},
 		{
-			"name": "InlineValueEvaluatableExpression",
+			"name": "InlineValueEvaluableExpression",
 			"properties": [
 				{
 					"name": "range",
@@ -7032,7 +7032,7 @@
 						"kind": "reference",
 						"name": "Range"
 					},
-					"documentation": "The document range for which the inline value applies.\nThe range is used to extract the evaluatable expression from the underlying document."
+					"documentation": "The document range for which the inline value applies.\nThe range is used to extract the evaluable expression from the underlying document."
 				},
 				{
 					"name": "expression",
@@ -13873,11 +13873,11 @@
 					},
 					{
 						"kind": "reference",
-						"name": "InlineValueEvaluatableExpression"
+						"name": "InlineValueEvaluableExpression"
 					}
 				]
 			},
-			"documentation": "Inline value information can be provided by different means:\n- directly as a text value (class InlineValueText).\n- as a name to use for a variable lookup (class InlineValueVariableLookup)\n- as an evaluatable expression (class InlineValueEvaluatableExpression)\nThe InlineValue types combines all inline value types into one type.\n\n@since 3.17.0",
+			"documentation": "Inline value information can be provided by different means:\n- directly as a text value (class InlineValueText).\n- as a name to use for a variable lookup (class InlineValueVariableLookup)\n- as an evaluable expression (class InlineValueEvaluableExpression)\nThe InlineValue types combines all inline value types into one type.\n\n@since 3.17.0",
 			"since": "3.17.0"
 		},
 		{

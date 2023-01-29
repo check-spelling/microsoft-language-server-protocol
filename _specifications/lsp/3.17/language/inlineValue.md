@@ -165,7 +165,7 @@ export interface InlineValueVariableLookup {
 }
 ```
 
-<div class="anchorHolder"><a href="#inlineValueEvaluatableExpression" name="inlineValueEvaluatableExpression" class="linkableAnchor"></a></div>
+<div class="anchorHolder"><a href="#inlineValueEvaluableExpression" name="inlineValueEvaluableExpression" class="linkableAnchor"></a></div>
 
 ```typescript
 /**
@@ -178,10 +178,10 @@ export interface InlineValueVariableLookup {
  *
  * @since 3.17.0
  */
-export interface InlineValueEvaluatableExpression {
+export interface InlineValueEvaluableExpression {
 	/**
 	 * The document range for which the inline value applies.
-	 * The range is used to extract the evaluatable expression from the
+	 * The range is used to extract the evaluable expression from the
 	 * underlying document.
 	 */
 	range: Range;
@@ -200,13 +200,13 @@ export interface InlineValueEvaluatableExpression {
  * Inline value information can be provided by different means:
  * - directly as a text value (class InlineValueText).
  * - as a name to use for a variable lookup (class InlineValueVariableLookup)
- * - as an evaluatable expression (class InlineValueEvaluatableExpression)
+ * - as an evaluable expression (class InlineValueEvaluableExpression)
  * The InlineValue types combines all inline value types into one type.
  *
  * @since 3.17.0
  */
 export type InlineValue = InlineValueText | InlineValueVariableLookup
-	| InlineValueEvaluatableExpression;
+	| InlineValueEvaluableExpression;
 ```
 * error: code and message set in case an exception happens during the inline values request.
 
